@@ -41,12 +41,14 @@
       you have found toto</span><small class="blink2" style="color: #f0000f;">.space</small>
   </h1>
 
-  <audio>
-    <source src="music.mp3" type="audio/mp3">
+  <audio id="music_for_space" loop autoplay>
+    <source src="./music.mp3" type="audio/mp3">
   </audio>
 
   <script>
-    document.querySelector("audio").play()
+    window.onload = function() {
+      document.getElementById("music_for_space").play();
+    }
   </script>
 </body>
 
